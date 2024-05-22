@@ -1,0 +1,16 @@
+<div class="col s12 tag-div">
+    <div class="pub-index">
+        <p style="font-size: 30px; font-weight: bold;">2023</p>
+        {% for pub in site.categories %}
+        {% capture test %}{{pub[0] | slice: 0}}{% endcapture %}
+        {% capture testup %}{{pub[0] | slice: 0 | upcase}}{% endcapture %}
+        <ul class="pub-post">
+          {% for post in pub[1] %}
+          <li style="color:  #00695c;">
+            <a href="https://ieeexplore.ieee.org/document/10398330" > Enhancing Critical Thinking and Engagement through Puzzle Box Integration in Virtual Reality-based Digital Game-Based Learning</a>
+            </li>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </div>
+</div>
