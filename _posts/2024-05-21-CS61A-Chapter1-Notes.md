@@ -29,7 +29,7 @@ Expressions typically describe computations. When Python evaluates an expression
 **Mathematical expressions** use *infix* notation, where the *operator* (e.g., +, -, *, or /) appears between the *operands* (numbers).
 
 <div class="callout">
-✂️ Numbers and arithmetic operations are *primitive* built-in data values and functions.
+    ✂️ Numbers and arithmetic operations are *primitive* built-in data values and functions.
 </div>
 
 ###### **Call Expressions** (1.2.2)
