@@ -5,7 +5,7 @@ date:   2024-05-21 16:43:00 +0800
 categories: Note
 tags: CS61A 
 ---
-
+Covering Week 1 to 4 : Functions, Control, High-Order Functions, Environments, and Recursive Functions.
 
 #### **1.2 Elements of Programming**
 
@@ -28,9 +28,9 @@ Expressions typically describe computations. When Python evaluates an expression
 
 **Mathematical expressions** use *infix* notation, where the *operator* (e.g., +, -, *, or /) appears between the *operands* (numbers).
 
-
-> ✂️ Numbers and arithmetic operations are *primitive* built-in data values and functions.
-
+<div class="callout">
+✂️ Numbers and arithmetic operations are *primitive* built-in data values and functions.
+</div>
 
 ###### **Call Expressions** (1.2.2)
 
@@ -75,9 +75,9 @@ The **=** symbol is called the *assignment* operator in Python.
 
 *Assignment* is our simplest means of *abstraction*, for it allows us to use simple names to refer to the results of compound operations. 
 
-
-> ✂️ Binding names to values provides a limited means of *abstraction*.
-
+<div class="callout">
+✂️ Binding names to values provides a limited means of *abstraction*.
+</div>
 
 ###### **Environment**
 
@@ -87,9 +87,9 @@ The possibility of binding names to values and later retrieving those values by 
 
 The procedure does not suffice to evaluate all Python code, only call expressions, numerals, and names. 
 
-
-> ✂️ Nested function application provides a means of *combining* operations.
-
+<div class="callout">
+✂️ Nested function application provides a means of *combining* operations.
+</div>
 
 ##### **1.2.6   The Non-Pure Print Function**
 
@@ -356,8 +356,9 @@ Higher-order functions permit us to manipulate these general methods to create f
 
 Some functions express general methods of computation, independent of the particular functions they call.
 
+<div class="callout">
+🧀 用户定义的函数让我们可以抽象和重用具体的数值运算模式，而高阶函数则让我们能够创建更加通用和灵活的计算方法，不依赖于特定的函数实现。</div>
 
-> 🧀 用户定义的函数让我们可以抽象和重用具体的数值运算模式，而高阶函数则让我们能够创建更加通用和灵活的计算方法，不依赖于特定的函数实现。
 
 
 ##### **1.6.3   Defining Functions III: Nested Definitions**
@@ -520,8 +521,9 @@ fact(4)
 
 In this example, we trust that **fact(n-1)** will correctly compute **(n-1)!**; we must only check that **n!** is computed correctly if this assumption holds.
 
-
-> ✂️ In this way, verifying the correctness of a recursive function is a form of proof by induction.
+<div class="callout">
+  ✂️ In this way, verifying the correctness of a recursive function is a form of proof by induction.
+</div>
 
 
 In general, iterative functions must maintain some local state that changes throughout the course of computation. At any point in the iteration, that state characterizes the result of completed work and the amount of work remaining.
@@ -580,3 +582,4 @@ result = fib(6)
 ```
 
 A function with multiple recursive calls is said to be *tree recursive* because each call branches into multiple smaller calls, each of which branches into yet smaller calls, just as the branches of a tree become smaller but more numerous as they extend from the trunk.
+
