@@ -5,7 +5,8 @@ date:   2024-05-21 16:43:00 +0800
 categories: Note
 tags: CS61A 
 ---
-Covering Week 1 to 4 : Functions, Control, High-Order Functions, Environments, and Recursive Functions.
+Notes covering [CS61A-2024](https://cs61a.org/) Weeks 1 to 4: Functions, Control, Higher-Order Functions, Environments, and Recursive Functions.
+
 
 #### **1.2 Elements of Programming**
 
